@@ -37,7 +37,7 @@ const AddVendors: React.FC<AddVendorsProps> = ({ open, setOpen }) => {
                                 <div className="mb-4 w-full">
                                     <Label htmlFor="vendor-type" className="mb-2">Type</Label>
 
-                                    <Select className="w-full">
+                                    <Select >
                                         <SelectTrigger className="w-full">
                                             <SelectValue placeholder="Select vendor type" />
                                         </SelectTrigger>
@@ -54,7 +54,7 @@ const AddVendors: React.FC<AddVendorsProps> = ({ open, setOpen }) => {
                                 <div className="mb-4 w-full">
                                     <Label htmlFor="vendor-type" className="mb-2">Type</Label>
 
-                                    <Select className="w-full">
+                                    <Select >
                                         <SelectTrigger className="w-full">
                                             <SelectValue placeholder="Select vendor type" />
                                         </SelectTrigger>
@@ -74,7 +74,7 @@ const AddVendors: React.FC<AddVendorsProps> = ({ open, setOpen }) => {
                             <div className="mb-4 w-full">
                                     <Label htmlFor="vendor-type" className="mb-2">Type</Label>
 
-                                    <Select className="w-full">
+                                    <Select >
                                         <SelectTrigger className="w-full">
                                             <SelectValue placeholder="Select vendor type" />
                                         </SelectTrigger>
