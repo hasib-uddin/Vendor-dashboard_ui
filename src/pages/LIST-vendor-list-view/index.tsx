@@ -44,7 +44,7 @@ export default function VendorListView() {
         vendor.contact.toLowerCase().includes(searchTerm.toLowerCase())
     )
 
-    const getCriticalityColor = (criticality) => {
+    const getCriticalityColor = (criticality: string) => {
         switch (criticality.toLowerCase()) {
             case 'low':
                 return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
@@ -58,8 +58,9 @@ export default function VendorListView() {
                 return 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300'
         }
     }
-
-    const getStatusColor = (status) => {
+ 
+    
+    const getStatusColor = (status: string) => {
         switch (status.toLowerCase()) {
             case 'active':
                 return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
