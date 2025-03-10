@@ -62,7 +62,7 @@ export default function Sidebar() {
             >
               <UserCircle className="h-8 w-8 rounded-full"/>
               
-              <span className="text-sm font-medium">John Doe</span>
+              <span className="text-base font-bold">John Doe</span>
               <ChevronDown className="h-4 w-4 transition-transform duration-200" />
             </MenuButton>
 
