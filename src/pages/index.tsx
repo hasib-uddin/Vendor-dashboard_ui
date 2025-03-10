@@ -96,15 +96,14 @@ export default function EnhancedVendorDashboard() {
   }
 
   return (
-    <div className={`min-h-screen ${isDarkTheme ? 'dark ' : ''} ${isNightTheme ? 'midnight' : ''}`} style={{ filter: `brightness(${brightness})` }}>
+    <>
+      <div className={`min-h-screen ${isDarkTheme ? 'dark ' : ''} ${isNightTheme ? 'midnight' : ''}`} style={{ filter: `brightness(${brightness})` }}>
       <div className="bg-gray-100 dark:bg-gray-900 min-h-screen transition-colors duration-300">
         <div className="flex ">
-          {/* Sidebar */}
           <aside className={`bg-white dark:bg-gray-800 w-44 min-h-screen  ${isDarkTheme ? 'dark text-white' : ''} ${isNightTheme ? 'midnight' : ''} p-4`}>
           
             <Sidebar />
           </aside>
-          {/* Main content */}
           <main className="flex-1 p-8">
             <div className="flex justify-between items-center mb-8">
               <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Vendor Dashboard</h1>
@@ -115,7 +114,6 @@ export default function EnhancedVendorDashboard() {
               </div>
             </div>
 
-            {/* Summary Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <Card className="bg-blue-50 dark:bg-blue-900">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -155,7 +153,6 @@ export default function EnhancedVendorDashboard() {
               </Card>
             </div>
 
-            {/* Charts */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <Card className="w-full">
                 <CardHeader>
@@ -206,8 +203,6 @@ export default function EnhancedVendorDashboard() {
               </Card>
             </div>
 
-            {/* Vendor Table */}
-        
             <div className="overflow-x-auto w-[99%]">
               <div className='max-[1024px]:overflow-x-auto'>
                 <Card >
@@ -303,12 +298,13 @@ export default function EnhancedVendorDashboard() {
               </div>
             </div>
 
-
-
-
           </main>
         </div>
       </div>
     </div>
+
+      
+
+    </>
   )
 }
